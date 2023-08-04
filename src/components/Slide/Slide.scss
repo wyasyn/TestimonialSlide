@@ -1,0 +1,57 @@
+.slide {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    .col-1 {
+        flex: 1;
+        background-image: url('../../assets/pattern-bg.svg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 3rem;
+        .pic {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+
+    .col-2 {
+        background-image: url('../../assets/pattern-quotes.svg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        flex: 1;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            @media screen and (min-width:64rem) {
+               flex-direction: row;
+               gap: 1rem;
+            }
+        }
+        @media screen and (min-width:64rem) {
+            align-self: center;
+            text-align: left;
+            background-position: 14rem top;
+            padding-left: 5em;
+        }
+    }
+    @media screen and (min-width:64rem) {
+        flex-direction: row-reverse;
+    }
+}
